@@ -4,3 +4,6 @@ statistic : HTML, CSS, JS
 조건
 1. public 저장소여야함
 2. branch 이름은 'gh-pages'여야 한다
+
+gh-pages branch를 만들고 나면 이제 publish를 누르고 기다리면 된다
+
