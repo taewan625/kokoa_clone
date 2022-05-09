@@ -1,0 +1,145 @@
+body {
+  font-family: "Times New Roman";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.title {
+  font-weight: bolder;
+  font-size: larger;
+  width: 20%;
+}
+.father {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+}
+.white {
+  margin: 10px;
+  border: 5px solid white;
+  height: 200px;
+  width: 100px;
+}
+.one {
+  background-color: tomato;
+  position: relative;
+}
+.tomato {
+  width: 100%;
+  text-align: 0;
+  font-weight: bold;
+  font-size: medium;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.two {
+  background-color: teal;
+  position: relative;
+}
+.teal {
+  width: 100%;
+  text-align: 0;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.three {
+  background-color: burlywood;
+  position: relative;
+}
+.burly {
+  width: 100%;
+  text-align: 0;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.four {
+  background-color: thistle;
+  position: relative;
+}
+.thistle {
+  width: 100%;
+  text-align: 0;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+div > span {
+  font-size: small;
+}
+
+/* 정답 */
+
+body {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.color {
+  width: 48%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.color:first-child .color__bg {
+  background-color: tomato;
+}
+
+.color:nth-child(2) .color__bg {
+  background-color: teal;
+}
+
+.color:nth-child(3) .color__bg {
+  background-color: burlywood;
+}
+
+.color:last-child .color__bg {
+  background-color: thistle;
+}
+
+.color__bg {
+  height: 300px;
+  border: 5px solid white;
+}
+
+.color__info {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 20px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}

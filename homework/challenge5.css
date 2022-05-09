@@ -1,0 +1,122 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.outline {
+  border: solid 3px cadetblue;
+  padding: 10px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+}
+.top__column {
+  width: 33%;
+}
+.top:first-child span {
+  display: flex;
+  justify-content: center;
+}
+.top .fa-times {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 30px;
+}
+.middle-top {
+  display: flex;
+  flex-direction: row;
+}
+.middle-top__box {
+  height: 150px;
+  width: 150px;
+  border: solid 1px black;
+  background-color: orange;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+.middle-top__title {
+  position: relative;
+  left: 10px;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.middle__play {
+  border: solid 1px black;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle__play:first-child span {
+  font-weight: bolder;
+}
+.main__one {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.main__one_box {
+  border: solid 1px black;
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: red;
+  margin-right: 10px;
+  position: relative;
+  top: 20px;
+}
+.main__two {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.main__two_box {
+  border: solid 1px black;
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: pink;
+  margin-right: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.main__thr {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.main__thr_box {
+  border: solid 1px black;
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: blue;
+  margin-right: 10px;
+  position: relative;
+  top: 20px;
+}
+.main__fou {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.main__fou_box {
+  border: solid 1px black;
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: green;
+  margin-right: 10px;
+  position: relative;
+  top: 20px;
+}

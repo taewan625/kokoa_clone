@@ -1,0 +1,162 @@
+body {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes shaker {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.dot {
+  width: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  animation: shaker 1s ease-in-out infinite;
+}
+
+.door {
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@keyframes mover {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.dot div {
+  height: 5px;
+  width: 5px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.door div {
+  height: 20px;
+  width: 5px;
+  background-color: white;
+}
+.one {
+  animation: mover 1s infinite;
+  animation-delay: 0.1s;
+}
+.two {
+  animation: mover 1s infinite;
+  animation-delay: 0.2s;
+}
+.thr {
+  animation: mover 1s infinite;
+  animation-delay: 0.3s;
+}
+.fou {
+  animation: mover 1s infinite;
+  animation-delay: 0.4s;
+}
+.fiv {
+  animation: mover 1s infinite;
+  animation-delay: 0.5s;
+}
+
+# 정답 html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #76c4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes dotAnimation {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.box {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dots {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  animation: dotAnimation 1s ease-in-out infinite;
+  margin-bottom: 200px;
+}
+
+.dot {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  /* 👆🏻 If you set the border-radius to half of the width and height 
+  it becomes a circle, 50% also works*/
+}
+
+.lines {
+  width: 150px;
+}
+
+@keyframes lineAnim {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+.line {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  animation: lineAnim 1s ease-in-out infinite;
+}
+
+/*
+Remove 'animation-delay and see what happens!!!
+*/
+
+.line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.line:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.line:nth-child(5) {
+  animation-delay: 0.4s;
+}

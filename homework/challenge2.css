@@ -1,0 +1,68 @@
+html {
+  background-color: tomato;
+}
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  background-color: wheat;
+  border-style: solid;
+  border-width: 3px;
+}
+.teal {
+  background-color: teal;
+  border-color: aliceblue;
+}
+.size {
+  height: 50px;
+  width: 50px;
+}
+.size2 {
+  height: 50px;
+  width: 200px;
+  border-style: dashed;
+}
+
+/* <정답> */
+body {
+  background: tomato;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.father {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: wheat;
+  border: 2px solid black;
+}
+
+.inside {
+  background: teal;
+  height: 50px;
+  width: 50px;
+  border: 3px solid white;
+}
+
+.inside-second {
+  width: 100%;
+  border-style: dashed;
+}
