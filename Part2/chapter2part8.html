@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website.</title>
+  </head>
+  <body>
+    <form>
+      <label for="website">website</label>
+      <input id="website" required placeholder="name" type="date" />
+      <!-- # url, email,range 등 다양하게 쓰인다. -->
+      <label for="Profile">Profile Photo</label>
+      <input id="Profile" type="file" accept=".png" /> #image/* ; 모든 이미지를
+      의미
+
+      <label for="first-name">First name</label>
+      <input id="first-name" required placeeholder="Name" type="text" />
+
+      <input required placeeholder="Last name" type="text" />
+      <input required placeeholder="username" type="text" />
+      <input required placeeholder="Password" minlength="10" type="password" />
+      <input type="submit" value="Create account" />
+    </form>
+  </body>
+</html>
+
+## html 문법 개념 ##
+<tagname attributename="attributevalue">content</tagname>
+
+# attributename="attributevalue" 처럼 attributevalue가 있을 때는 attributename
+자체에 많은 값이 있을 때만 그렇다. # attributename에 true 나 false처럼 2가지
+밖에 없을 때는 attributename 만 써줘도 무방 # label 에서 for="###" 에서 가지고
+있는 이름과 input id="###" 이면 input의 내용이 label에 적용이 된다. --> id가
+중요 포인트. id는 body tag 안에서 다 쓰일 수 있다. why? ID는 unique identifier =
+고유식별자 이기 때문 id 규칙 : element당 1개의 id만 가질 수 있다. -> for=abc
+id=abc 하고 다른 것에 id=abc 하면 안됨. id가 중복되서 error 남 id가 중요한
+또다른 이유는 id를 이용해서 css를 적용하기 때문. id 지정하고 css로 너는
+보라색이야 너는 파란색이야 이렇게

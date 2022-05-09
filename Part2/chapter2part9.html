@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website.</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="website">website</label>
+        <input id="website" required placeholder="name" type="date" />
+      </div>
+      <div>
+        <label for="Profile">Profile Photo</label>
+        <input id="Profile" type="file" accept=".png" /> #image/* ; 모든
+        이미지를 의미
+      </div>
+      <div>
+        <label for="first-name">First name</label>
+        <input id="first-name" required placeeholder="Name" type="text" />
+      </div>
+      <div>
+        <input required placeeholder="Last name" type="text" />
+        <input required placeeholder="username" type="text" />
+      </div>
+      <div>
+        <input
+          required
+          placeeholder="Password"
+          minlength="10"
+          type="password"
+        />
+        <input type="submit" value="Create account" />
+      </div>
+    </form>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website.</title>
+  </head>
+  <body>
+    <header>
+      <h1>The newyork times</h1>
+      <span> hello? </span>
+    </header>
+    <!-- # header는 head와 완전 다름. head는 보이지 않는 tag과  header는 body 안에 존재하는 것임 + div를 대신함 -->
+    <div id="header"></div>
+    <!-- # 옛날에는 div id=header 이런식으로 겁나게 많이함. 하지면 그냥 header로 전문적으로 하는 추세 -->
+    <main>
+      <p>hello?</p>
+      <!-- # p = paragraph -->
+    </main>
+    <aside>side bar</aside>
+    <footer>&copy; 2022 T.W</footer>
+    <!-- # 꼬리 말을 위한 tag// -->
+  </body>
+</html>
+
+<!-- # header, main, footer 를 div를 바꾸어 주어도 브라우저 상에서 변화는 없지만 코드를 이해하는데 어려움이 생긴다.
+  그래서 header, main, footer 같이 semantic code로 짜주는 것이 이해도가 높다.
+# nonsemantic code ex) div, span : span은 short content일 때 cf) p 문단일 때 -->

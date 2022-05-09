@@ -1,0 +1,32 @@
+# 2.4 a: anchor (닻)-집게사장 집 = link를 의미. 다른 사이트로 들어가는 거임
+<h1>Hello!</h1>
+<a href="http://google.com">Go to google.com</a>
+# a 자체로만 링크로 들어갈 수 없다. a를 기본으로 깔고 다른 정보를 추가해야 함 #
+# attributes(속성): tag에 추가하는 부가적인 정보 ex) href # href : HTTP
+reference or hyperlink reference 라고 함
+
+<h1>Hello!</h1>
+에서
+<h1 taewan="jeongeun">Hello!</h1>
+로 바꿔주어도 상관이 없다. 하지만 taewan이라는 atrributes가 없기 때문에 아무런
+영향을 안끼침 그렇다고
+<h1 href="http://google.com"></h1>
+해도 작동하지 않음
+
+<a href="http://google.com" target="_self">Go to google.com</a>
+1) attribute : target="_self" : 처음 브라우져에서 구글로 바뀜 창은 1개 가 됨
+<a href="http://google.com" target="_blank">Go to google.com</a>
+2) attribute : target="_blank" : 처음 브라우져에서 새로 구글로 이동 창은 2개
+
+<img src="https://t1.daumcdn.net/cfile/blog/24578240563AA73A18" />
+# 이미지는 tag 사이에 글이 들어가는 것이 아니라 걍 img이기 때문에 마침 tag가
+없음 # src : soruce 소스라고 하던데 찾아봐야함 : 이미지를 넣을꺼임이라는
+attribute 임. h1에서는 작동 안함 # 위의 것은 컴퓨터에서 이미지 주소 복사로
+가져온 것이고 이제 이미지 자체를 가지고 올것임
+<img src="tw&je.jpg" />
+# 주의점 : .jpg 라는 것을 오타 없이 잘 쓰고 위의 코드는 tw&je.jpg는
+chapter2part4.html과 같은 위치에 있다는 것을 기본전제 함으로 tw&je.jpg은 같은
+폴더 안에 있어야 함 # 만약에 twje라는 이미지를 가지고 오고 싶다고 하면
+<img src="/img/twje.jpg" /> #img/ 에 있다고 더 써줘야함 "img/를 path
+notation"이라고 한다. = 경로 표기법 root 위에 있는 img를 표기시 /img/twje.jpg
+으로 나타내기
