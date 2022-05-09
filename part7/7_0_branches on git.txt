@@ -1,0 +1,20 @@
+git_branch
+개념 : git에서 branch는 code들의 평형세계이다
+일직선의 master branch가 있고 이 곳에는 잘 작동하는 code들을 넣고
+master branch의 줄기에서 실험적인 것을 할 때 branch 1 2등으로 가지를 뻗어나간다
+
+github desktop에 가면 current branch가 존재 그것을 click하면 default branch로 main이 존재
+* main=master branch이다.
+여기서 New branch를 해서 새로운 branch를 만들고 이곳에 실험적인 것을 하면 된다.
+code를 수정한 후 github desktop 에서 commit을 누르면 어느 branch에 올릴지 나옴
+한가지를 선택한 후 제출하게 되면 그곳의 branch만 변경되고 아닌 것은 그전 버전이 유지됨
+
+정리
+1. default로 master branch를 가짐
+2. 실험적인 것을 위해서 새로운 branch를 추가 가능
+3. master에서 시작된 code를 변경 후 commit을 원하는 branch에 commit이 가능
+4. 수정본과 그전 파일을 가질 수 있음
+
+
+수정된 code를 github desktop의 상단 Branch ->merge into main을 누르면
+변경된 version의 code를 복사해서 이동이 가능 
