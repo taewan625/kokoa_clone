@@ -1,0 +1,10 @@
+1. github-desktop 에서 현재의 branch를 main으로 둔다
+2. 수정할 것을 수정하고 저장한다
+3. commit 후 push까지 해준다
+
+그리고 나서 gh-pages에는 file이 update 되지 않았으므로 gh-pages 단계에 들어간다
+
+4. current branch를 gh-pages로 변경하고 상단에 branch를 click 그리고 update from main을 click 한다
+5. 얘도 push 작업까지 마무리 되면 web page가 update 된다
+
+tip. 이모지 : window + .🤞👍😊❤
