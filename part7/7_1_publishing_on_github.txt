@@ -1,0 +1,6 @@
+git-hub는 statistic webpage를 무료로 제공한다
+statistic : HTML, CSS, JS
+
+조건
+1. public 저장소여야함
+2. branch 이름은 'gh-pages'여야 한다
