@@ -1,0 +1,6 @@
+1. korean language pack for visual studio code : 한국어 설정
+2. community material theme : 배경색 설정
+3. live server : vsc에서 바로 html 볼 수 있도록 함
+4. material lcon theme : 제일 중요. 겉멋의 끝판왕. 아이콘이 나타나게 해줌. 이거 없으면 찐다임
+5. prettier- code formatter : 얘도 중요. 저장버튼 누루자마자 코드 예쁘게 나열해줌
+* 5.이 안될때: 1) 설정-설정으로 들어가서 format on save 체크 2) Default Formatter 가 esbenp.prettier-vscode로 설정되어야 함
