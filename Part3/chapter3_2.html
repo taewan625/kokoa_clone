@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <link rel="stylesheet" href="chapter3_1styles.css" />
+    <style>
+      h1 {
+        color: rgb(255, 136, 0);
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 50px;
+        font-style: italic;
+      }
+      address {
+        text-align: center;
+        color: tomato;
+      }
+      footer {
+        color: rgb(196, 40, 228);
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The taewan Times</h1>
+    </header>
+    <main>
+      <address>102 Road bunporo</address>
+    </main>
+    <footer>&copy; 2022 T.W</footer>
+  </body>
+</html>
+<!-- 
+css code role selector { property: value; } # select를 지정해주고 ex) h1,
+address, &copy 중괄호{}로 시작 원하는 property를 쓸 때 절대 스페이스 사용하지
+않고 -로 표시 그리고 property이후 : 을 꼭 지정하고 value를 설정 후 (이때 value는
+아무거나 다 가능하지만 property에 맞는 value를 써야 작동) 항상 ;로 마무리 !!!
+
+css 개념
+1)  <link rel="stylesheet" href="chapter3_1styles.css" /> this is external css
+2)  <style></style> this is inline css
+
+이 두개가 같은 것을 가리킬 때 가장 밑에 있는 것이 적용이 된다.
+결론 : css는 위에서부터 아래로 읽히고 결국 적용 되는 것은 가장 마지막 코드 이다. -->

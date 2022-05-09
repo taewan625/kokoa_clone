@@ -1,0 +1,74 @@
+<!-- 3.14 Pseudo Selectors part One -->
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+      }
+      div:first-child {
+        background-color: tomato;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html> -->
+
+<!-- # element를 더 세부적으로 해주는 pseudo Selectors before we learned 1) just name
+ex) body 2) id ex) #idname 3) class ex) .classname pseudo Selectors : 처음이나
+끝에 것만 선택한다든가 span 다음에 오는 class를 선택한다던가 복잡한 것을 할 때
+사용 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(2),
+      span:nth-child(even),
+      span:nth-child(2n + 1) {
+        background-color: teal;
+      }
+      /* span에서 원하는 것만 고를 때 nth-child; n번째 애들중 을 사용.
+    추가적으로 짝수 child를 다 바꿀 때 even을 사용 홀수는 odd */
+    </style>
+  </head>
+  <body>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>
+
+<!-- 배운 내용 -->
+<!-- first, end, nth, even(2n), odd(2n+1), n을 이용하면 몇배수 든 다 가능하다 -->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      span {
+        background-color: teal;
+        padding: 20px;
+        margin: 30px;
+      }
+      #tomato,
+      #tomato2,
+      #tomato3 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <span>hello</span>
+    <span id="tomato">hello</span>
+    <span>hello</span>
+    <span id="tomato2">hello</span>
+    <span>hello</span>
+    <span id="tomato3">hello</span>
+    <span>hello</span>
+  </body>
+</html>
+
+<!-- # inline 요소들은 padding에서는 4방향으로 다 작용을 하는데 margin을 적용할 때 height 와 width가 없기 때문에 좌우만 적용 된다. -->
+<!-- 그래서 실제로 상하에도 적용을 시키고 싶을 때 inline 요소를 block 처리를 하여 margin을 상하좌우로 적용을 해야 한다. -->
+<!-- display라는 property를 통해서 block 설정이 가능함 display: block; -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      span {
+        background-color: teal;
+      }
+      .btn {
+        border-radius: 10px;
+        padding: 15px;
+      }
+      .tomato {
+        background-color: tomato;
+        color: aliceblue;
+      }
+      .teal {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <span>hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+  </body>
+</html>
+
+<!-- #tomato= id="toamto"   /  .tomato=class="tomato" 와 같은 말
+python과 다르게 html class는 여러개 반복되는 것을 지칭할 때 class를 사용하고 이는 id와 달리 같은 이름으로 지칭 가능하다.
+또한 id에서는 여러개를 쓸수 없지만 class에서는 여러개의 이름을 넣을 수 있고(띄어쓰기로) 그것을 각각 지정하여 .classname해서 css언어로 html을 꾸밀수 있다 -->

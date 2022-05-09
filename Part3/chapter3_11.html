@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 100vh;
+
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        /* wrap: 화면창을 줄일때 box 가 크기를 바꾸지 않고 위치가 변하고 nowarp: 화면을 바꿀때 box 크기도 줄어들면서 공간을 일정하게 유지 */
+        flex-direction: column-reverse;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50pt;
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+      }
+      #second {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>
+
+<!-- 여기서 div에 숫자를 넣고 css의 div에 display: flex; 를 진행하게 되면 div의 숫자들이 children이 되고 div가 parents가 된다 -->

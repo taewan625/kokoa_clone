@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 100vh;
+        /* vh: viewport height ; screenheight라고 생각하면 됨 px로 하면 상대방이사용하는 기계의 화면 크기따라 달라지므로 그것까지 감안한 vh를 이용한다 */
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* flex-direction을 이용하면 justify-content 행동이 y축으로 바뀜 */
+        align-items: center;
+        /* justify-content는 왼쪽, 가운대, 오른쪽 이동 가능하게 한다  얘가 felxbox의 2,3번째 규칙이 됨*/
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+      }
+      #second {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+  </body>
+</html>
+
+<!-- inline-box의 문제점을 해결해주는 것이 flexbox이다
+이것은 지켜야할 3가지의 규칙이 있다
+1) 자식에게 명시하지 않고 부모에게 명시한다. div의 부모를 display:flex로 만든다
+   부모 엘리멘트에만 말하고 자식 엘리먼트에 말하지 않는다 = 부모에게 명시하고 자식에게 명시할 필요X EX) div에 명시할게 있으면 body에게 명령을 해야함
+   이렇게 하고 나면 많은 다른 속성(property)를 수정할 수 있다
+2)3)  main axis(주축)justify-content and cross axis(교차축)align-items
+주축은 x축이고 교차축은 y축이라고 생각하면 됨. justify-content 는 주축을 따라서 움직이고 align-items는 교차축 위로 움직인다
+align-items를 이용하고 싶을 때 defalt값으로 body가 한정 되어 있으므로 body의 height를 늘려주고 이용하면 된다.
+하지만 이들의 값은 주축이 수평=x축 값은 변경 가능하므로 항상 가로라고 생각하지는 말기
+
+## 정리
+flexbox를 이용하려고한다면 우선 display: felx;를 지정해주고 이를 지정해 주어야지 justify-content align-items를 이용할 수 있다.
+
+ 제일 중요
+flex에 관한 모든 것을 시각적으로 보여주는 어플
+https://flexboxfroggy.com/#ko -->
+
+<!-- 3_11에도 연장된 felxbox 개념이 들어가 있다 -->

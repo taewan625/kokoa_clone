@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      html {
+        background-color: tomato;
+      }
+      body {
+        height: 100vh;
+        margin: 20px 5px 12px 99px;
+        /* # 위 오른쪽 아래쪽 왼쪽 */
+        background-color: thistle;
+      }
+      div {
+        margin: 20px 15px;
+        /* 2개 넣을 때는 상하, 좌우 */
+        /* 하지만 여기서 보면 상하를 20px로 하든 50px로 하든 간에 margin이 흰색 box를 기준으로 이동 하지 않는다.
+          우리가 원하던 모습은 분홍색 안의 흰 박스가 분홍 박스의 경계면을 상하좌우로 둘러싸기를 원함  하지만 붉은색 경계를 기준으로 움직임
+          이런 헷갈리게 움직이는 이유는 collapsing margins 현상으로 분홍색,흰색 box가 상하가 같을 때 같이 움직이는 현상 cf) 좌우는 아님
+          각 박스의 상하 높이가 다르다면 collapsing margins 현상이 나타나지 않음*/
+        height: 150px;
+        width: 150px;
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

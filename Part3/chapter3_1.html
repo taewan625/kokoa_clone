@@ -1,0 +1,45 @@
+<!-- 
+2가지 방법
+1) HTML 코드와 CSS 코드를 같은 공간안에 집어 넣는 것
+* 여기서는 1) 방법을 어떤 식으로 하는지 알려줄 것임
+style 이라는 code를 사용. 이것은 무조건 head에만 존재하고 여기에다가 CSS code를 넣기만 하면 됨 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      /* put cs/ code in here */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The taewan Times</h1>
+    </header>
+    <main>
+      <address>102 Road bunporo</address>
+    </main>
+    <footer>&copy; 2022 T.W</footer>
+  </body>
+</html>
+
+<!-- 2) 추천, 전문적 방법 CSS 와 HTML을 분리하는 것
+   -> 다른 파일에 만들면 다른 상황에서도 사용할 수 있고 파악하기 쉬움
+  link code를 이용하여서 css file과 연결만 하면 된다. -> 이 방법은 css file을 가지고 있으면 차후 다른 web code file에서도 link만 걸어서 사용할 수 있다.-->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <link rel="stylesheet" href="chapter3_1styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The taewan Times</h1>
+    </header>
+    <main>
+      <address>102 Road bunporo</address>
+    </main>
+    <footer>&copy; 2022 T.W</footer>
+  </body>
+</html>

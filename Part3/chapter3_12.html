@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      div {
+        /* position: fixed; 이거는 web page 스크롤을 내려도 계속 유지할 수 있도록 해주는 것 */
+        width: 300px;
+        height: 300px;
+        color: white;
+        background-color: teal;
+      }
+
+      #different {
+        top: 5px;
+        left: 200px;
+        /* top, left, right, bottom 을 수정하면 이동하게 되어있다. block이든 margin이든 신경안씀 */
+        position: fixed;
+        /* position: fixed; 이거는 web page 스크롤을 내려도 계속 유지할 수 있도록 해주는 것
+           이때 div의 위치는 초기 그려져있던 곳을 기준으로 함 */
+        background-color: wheat;
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div id="different"></div>
+  </body>
+</html> -->
+
+<!-- position이라는 것은 layout과는 달리 약간씩 이동할 때 사용하는 것 
+fixed는 고정시키는 것-->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      div {
+        /* position: fixed; 이거는 web page 스크롤을 내려도 계속 유지할 수 있도록 해주는 것 */
+        width: 300px;
+        height: 300px;
+        color: white;
+      }
+      #teal {
+        position: fixed;
+        background-color: teal;
+        opacity: 0.2;
+        /* opacity: 투명도 */
+      }
+      #different {
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="teal"></div>
+    <div id="different"></div>
+  </body>
+</html>

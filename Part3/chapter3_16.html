@@ -1,0 +1,71 @@
+<!-- Pseudo selectors part Two -->
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>home - my first website</title>
+    <style>
+      p span {
+        color: white;
+      }
+      p ~ span {
+        /* +의 의미는 p 바로 뒤에 span이 와야 됨으로 사이에 뭔가가 들어오면 효과가 사라짐 그 때 사용하는 것이 ~ 이다 */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        안녕하세요 오늘은 비도오고 그래서 짧고 좋은 글귀를 모아왔어요 사랑이야기
+        이별이야기 힘들때 위로되는 글귀등등 여러가지 준비해왔어요 공감되고
+        힘이되는 글이 많으면 좋겠어요 이런 감성 글귀들은 새벽에 읽어야 되게
+        감동이 증폭되는거 같아요 [출처] 짧고 좋은 글귀 24가지 모음|작성자
+        낙타<span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html> -->
+
+<!-- 요약
+1) p span : parent child
+2) p + span : child next to child
+3) p > span : parent and direct child
+4) p ~ sapn : child to child, no need to only next -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>home - my first website</title>
+    <style>
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder="username"] {
+        background-color: red;
+      }
+      input[placeholder~="name"] {
+        /* in here, ~ : means in placeholder which have name all of that active */
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="first name" />
+        <input type="text" placeholder="second name" />
+        <input type="text" placeholder="username" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>

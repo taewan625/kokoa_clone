@@ -1,0 +1,5 @@
+/* css tag는 보통 3가지 규칙이 있다 */
+/* selector {property-never-slash: value;} */
+h1 {
+  color: rgb(153, 223, 24);
+}

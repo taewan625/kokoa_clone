@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <link rel="stylesheet" href="chapter3_1styles.css" />
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+      }
+      span {
+        display: block;
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>
+
+<!-- # 내용 default value 가 inline과 block으로 지정된 것은 display라는 property를 통해서 inline과 block을 변경할 수 있다. -->
+<!-- # 추가적으로 div를 inline으로 변경시 inline 특성상 height와 width가 존재하지 않아서 사라지게 됨을 알 수 있다. 글자를 넣어도 height와 width 없다  -->
+
+<!-- # inline : box가 아님, height와 width 없음 
+# block : box 이고, margin, padding, border 이란 3가지 특성을 가짐
+# margin: box의 border(경계)의 바깥에 있는 공간. default 값으로 body는 8px의 margin 값을 가지고 시작한다. 
+# 간단 정리: margin은 body 안의 box=block 의 경계면에 생기는 공간이라고 생각 하면됨. 그래서 각 박스(ex) body, div 등) 마다 margin의 지정이 가능-->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <link rel="stylesheet" href="chapter3_1styles.css" />
+    <style>
+      html {
+        background-color: tomato;
+      }
+      /* html은 문서 전체를 의미하는 것임 */
+      body {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        background-color: thistle;
+      }
+      div {
+        margin-left: 50px;
+        height: 150px;
+        width: 150px;
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>

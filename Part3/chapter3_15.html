@@ -1,0 +1,70 @@
+<!-- Combinators
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+    div > span{
+      color: tomato;
+      background-color: yellowgreen;
+      padding:  5px;
+      border-radius:  10px;
+      text-decoration: underline;
+      /*  i wnat only 1st div to change, but when i give 'div span' every span active. that time i do div > span ; it means direact span
+      div > sapn ; div 바로 밑에 span에게 값을 주는 것을 의미 span 위치 바뀌면 또 다르게 적용 필요 이 때는 p +span 해야함*/
+    }
+    div p span {
+      color: red;
+      /* p span: parent child 구성이다 이것을 div p span 이렇게 써도 무방 */
+    }
+    </style>
+  </head>
+  <body>
+  <div>
+    <span>hello</span>
+    <p>span에서 원하는 것만 고를 때 nth-child; n번째 애들중 을 사용. 추가적으로 짝수 child를 다 바꿀 때 even을 사용 홀수는 odd 
+       first, end, nth, even(2n), odd(2n+1), n을 이용하면 몇배수 든 다 가능하다<span>inside</span>
+    </p>
+     </div> 
+     </html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Home - my first website</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      p + span {
+        /* span이 direct로 밑에 있지 않고 더 밑에 p와 친구 처럼있을 때는 +를 이용한다 */
+        color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: underline;
+      }
+      div p span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        span에서 원하는 것만 고를 때 nth-child; n번째 애들중 을 사용. 추가적으로
+        짝수 child를 다 바꿀 때 even을 사용 홀수는 odd first, end, nth,
+        even(2n), odd(2n+1), n을 이용하면 몇배수 든 다 가능하다<span
+          >inside</span
+        >
+      </p>
+      <span>hello</span>
+    </div>
+  </body>
+</html>
