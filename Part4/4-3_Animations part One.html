@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>The taewan times</title>
+    <style>
+      @keyframes superSexyCoinFlip {
+        from {
+          transform: rotateX(0deg);
+        }
+        to {
+          transform: rotateX(360deg) translateY(-100px);
+        }
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
+        /* infinite는 무한하게 회전하는 것 */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/a.jpg" />
+  </body>
+</html>
+
+<!-- animation을 하는 이유 - 계속 움직이게 하고 싶을 때 그리고 translition과 transformation말고 사용할 때 
+규칙 1.
+@keyframes 원하는 이름 { from{} to{}} 이런식으로 작성 후  img에 amimation: 원하는 이름 시간 ease 사용-->

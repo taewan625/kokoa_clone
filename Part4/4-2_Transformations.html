@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>The taewan times</title>
+    <style>
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        transform: rotateY(85deg) rotateX(20deg) rotateZ(35deg);
+        /* transform rotate 으로 rotate 하면 3D로 회전이 가능하다 */
+        transform: scale(2, 2);
+        /* scale 로 사이즈를 키울수 있다*/
+        transform: translateX(100px);
+        /* 보듯이 img 가 span을 신경쓰지 않고 이동하는 것을 알 수 있다
+        중요 개념: transformation은 box element를 변형시키지 않는다. margin, padding이 적용되지 않는다
+        span은 img가 원래 위치에 있다고 생각함 */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/a.jpg" />
+    <span>akdsjflkdsjfldsj</span>
+  </body>
+</html> -->
+
+<!-- transform은 여러개에 작용이 가능하다 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>The taewan times</title>
+    <style>
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+        /* 중요!! transition은 root 부분에 있어야지 img:hover 부분(state 부분)에 존재하면 안된다!! */
+      }
+      img:hover {
+        transform: rotateX(360deg) scale(0.5);
+        /* 추천 : transform mdn  수많은 것들이 존재*/
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/a.jpg" />
+  </body>
+</html>
